@@ -25,9 +25,9 @@ calculated_values = [sum(value * weight for value, weight in zip(alternative, we
 
 alternatives_names = ['A1', 'A2', 'A3', 'A4', 'A5']
 
-highest_alternative_index = calculated_values.index(max(calculated_values)) 
-highest_alternative = alternatives_names [highest_alternative_index]
 highest_alternative_value = max(calculated_values)
+highest_alternative_index = calculated_values.index(highest_alternative_value) 
+highest_alternative = alternatives_names [highest_alternative_index]
 
 print(f"Всі альтернативи: {calculated_values}")
 print(f"Найкраща альтернатива: {highest_alternative}")
